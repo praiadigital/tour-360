@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tour 360 — tours virtuais para seus anúncios</title>
+<meta name="description" content="Crie tours virtuais imersivos para imóveis do litoral e venda/alugue mais rápido. Satélite da rede praia.digital">
+<style>
+body{margin:0;font-family:system-ui,sans-serif;background:#111827;color:#f9fafb;min-height:100vh}
+header{padding:60px 24px;text-align:center;background:radial-gradient(circle at 50% 0%,#1e3a8a,#111827)}
+nav a{color:#93c5fd;margin:0 8px;text-decoration:none;font-size:14px}
+.cta{display:inline-block;background:#2563eb;color:#fff;padding:14px 32px;border-radius:99px;text-decoration:none;font-weight:700;margin-top:20px}
+.wrap{max-width:860px;margin:auto;padding:32px}
+.viewer{position:relative;border-radius:20px;overflow:hidden;height:340px;background:linear-gradient(90deg,#0ea5e9,#fde68a,#0ea5e9,#7dd3fc);background-size:400% 100%;animation:pan 18s linear infinite;display:flex;align-items:center;justify-content:center}
+@keyframes pan{0%{background-position:0% 0}100%{background-position:400% 0}}
+.viewer span{background:rgba(0,0,0,.55);padding:12px 24px;border-radius:99px;font-size:18px}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:32px}
+.f{background:#1f2937;border-radius:16px;padding:20px}
+.f h3{color:#93c5fd}
+footer{padding:20px;text-align:center;font-size:13px;color:#9ca3af}
+footer a{color:#93c5fd}
+.steps{counter-reset:s}
+.steps li{list-style:none;margin:14px 0;padding-left:44px;position:relative}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-2px;width:30px;height:30px;background:#2563eb;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700}
+</style></head>
+<body>
+<header><h1>📸 Tour 360</h1><p>Tours virtuais imersivos que vendem seu imóvel antes da visita</p>
+<nav><a href="https://praia.digital">Praia Digital</a><a href="https://praia.digital/portal-corretores">Portal do Corretor</a><a href="https://praia.digital/gerador-descricoes">Gerador de Descrições</a><a href="https://praia.digital/apps">Todos os apps</a></nav>
+<br><a class="cta" href="#demo">Ver demo ao vivo ↓</a></header>
+<div class="wrap">
+<div class="viewer" id="demo"><span>🌊 Varanda com vista mar — arraste na imaginação 😄</span></div>
+<div class="feats">
+<div class="f"><h3>⚡ Em minutos</h3><p>Fotos 360 do celular viram um tour navegável com hotspots entre cômodos.</p></div>
+<div class="f"><h3>📈 +40% de conversão</h3><p>Anúncios com tour virtual recebem mais reservas e menos visitas perdidas.</p></div>
+<div class="f"><h3>🔗 Link direto</h3><p>Compartilhe o tour no Airbnb, Booking, WhatsApp e no seu anúncio na praia.digital.</p></div>
+<div class="f"><h3>🤖 Narração por IA</h3><p>Descrição falada de cada ambiente gerada pelo <a style="color:#93c5fd" href="https://praia.digital/hermes-agents">Hermes Agents</a>.</p></div>
+</div>
+<h2>Como funciona</h2>
+<ol class="steps"><li>Capture fotos 360° dos ambientes com o celular.</li><li>Envie e conecte as cenas com hotspots de navegação.</li><li>Publique e incorpore no seu anúncio em qualquer portal.</li></ol>
+<p style="margin-top:24px">Quer um anúncio completo? Gere a descrição no <a style="color:#93c5fd" href="https://praia.digital/gerador-descricoes">Gerador de Descrições IA</a> e precifique com o <a style="color:#93c5fd" href="https://praia.digital/marea">Maréa</a>.</p>
+</div>
+<footer>Rede <a href="https://praia.digital">praia.digital</a> · <a href="https://praia.digital/ferramentas-gratuitas">Ferramentas Gratuitas</a> · <a href="https://praia.digital/newsletter-litoral">Newsletter</a></footer>
+</body></html>
