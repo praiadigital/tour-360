@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tour 360 — Tours virtuais que vendem imóveis | Praia Digital</title>
-<meta name="description" content="Crie tours virtuais 360° imersivos para seus anúncios imobiliários no litoral. Demo interativa e guia de produção.">
-<link rel="canonical" href="https://praia.digital/tour-360/">
-<style>:root{--azul:#0a2540;--mar:#0e7490;--areia:#f8f5ef}*{margin:0;box-sizing:border-box;font-family:system-ui,sans-serif}body{background:var(--areia);color:#1e293b}header{background:linear-gradient(135deg,var(--azul),var(--mar));color:#fff;padding:2.5rem 1.5rem;text-align:center}.badge{display:inline-block;background:rgba(255,255,255,.15);padding:.25rem .8rem;border-radius:999px;font-size:.8rem;margin-bottom:.8rem}main{max-width:760px;margin:2rem auto;padding:0 1.25rem}.card{background:#fff;border-radius:1rem;padding:1.75rem;box-shadow:0 4px 24px rgba(10,37,64,.08);margin-bottom:1.5rem}.tour{background:linear-gradient(120deg,#164e63,#0e7490,#22d3ee);background-size:300% 100%;animation:pan 14s linear infinite alternate;border-radius:1rem;height:280px;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;flex-direction:column;gap:.5rem}@keyframes pan{to{background-position:100% 0}}.tour .big{font-size:2.5rem}.comodos{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:1rem}.comodos button{border:1px solid var(--mar);background:#fff;color:var(--mar);border-radius:999px;padding:.4rem 1rem;cursor:pointer;font-weight:600}.comodos button.ativo{background:var(--mar);color:#fff}table{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:.5rem}td,th{padding:.55rem;border-bottom:1px solid #e2e8f0;text-align:left}.rede{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem}.rede a{background:#fff;border:1px solid #e2e8f0;border-radius:.6rem;padding:.8rem;text-decoration:none;color:var(--azul);font-weight:600;font-size:.9rem}footer{text-align:center;padding:2rem;color:#64748b;font-size:.85rem}footer a{color:var(--mar)}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour 360 Pro | Praia Digital</title>
+<meta name="description" content="Guia interativo para criar tours virtuais que dobram a conversão do seu anúncio de temporada. Satélite de praia.digital.">
+<style>
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f8fafc;color:#0f172a;line-height:1.6}
+.hero{background:linear-gradient(135deg,#0f172a,#334155);color:#fff;padding:50px 20px;text-align:center}
+.container{max-width:1000px;margin:0 auto;padding:30px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.cta{display:inline-block;background:#fff;color:#0c4a6e;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:700;margin:6px}
+button{background:#0284c7;color:#fff;border:none;padding:10px 18px;border-radius:8px;font-weight:700;cursor:pointer}
+input,select,textarea{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px;margin:6px 0;font-family:inherit}
+footer{text-align:center;padding:24px;color:#64748b;font-size:.9em}
+.bar{height:14px;border-radius:7px;background:linear-gradient(90deg,#0ea5e9,#0369a1)}
+</style>
 </head>
 <body>
-<header><span class="badge">🛰️ App satélite de <a href="https://praia.digital" style="color:#fff">praia.digital</a></span><h1>🎥 Tour 360</h1><p>Tours virtuais imersivos que triplicam a conversão dos seus anúncios</p></header>
-<main>
-<div class="card"><h3 style="margin-bottom:.6rem">Demo: Apartamento 2 quartos — Enseada, Guarujá</h3>
-<div class="tour" id="tela"><span class="big" id="icone">🛋️</span><b id="nome">Sala de estar</b><small id="desc">Vista parcial para o mar · piso porcelanato · varanda integrada</small></div>
-<div class="comodos" id="comodos"></div></div>
-<div class="card"><h3>📊 Por que investir em tour 360°?</h3><table>
-<tr><th>Métrica</th><th>Anúncio com fotos</th><th>Com Tour 360°</th></tr>
-<tr><td>Tempo no anúncio</td><td>~40 s</td><td>~3 min</td></tr>
-<tr><td>Taxa de contato</td><td>1,8%</td><td>5,4%</td></tr>
-<tr><td>Visitas presenciais perdidas</td><td>Altas</td><td>-60%</td></tr>
-<tr><td>Diária média aceita (temporada)</td><td>Base</td><td>+15–25%</td></tr></table>
-<p style="margin-top:1rem;font-size:.9rem">Combine com anúncios do <a href="https://praia.digital/gerador-descricoes">Gerador de Descrições</a> e preços do <a href="https://praia.digital/preco-justo">Preço Justo</a>.</p></div>
-<h2 style="margin:1.5rem 0 .8rem">🌐 Rede Praia Digital</h2>
-<div class="rede">
-<a href="https://praia.digital">🏠 Portal Praia Digital</a>
-<a href="https://praia.digital/portal-corretores">📝 Portal do Corretor</a>
-<a href="https://praia.digital/ferramentas">🛠️ Ferramentas</a>
-<a href="https://praia.digital/checklist-anfitriao">✅ Checklist Anfitrião</a>
-<a href="https://praia.digital/apps">🛰️ Todos os apps</a>
+<nav style="background:#0c4a6e;padding:12px 20px;display:flex;gap:14px;flex-wrap:wrap;font-family:system-ui,sans-serif">
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praia.digital/">🌊 Praia Digital</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/apps/">Hub</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/hermes-agents/">Hermes Agents</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/area-anfitriao/">Anfitrião</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/simulador-roi/">ROI</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/simulador-credito/">Crédito</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/guia-litoral/">Guia</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/calculadoras/">Calculadoras</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/radar-precos/">Radar</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/mapa-investidor/">Mapa</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/concierge-ia/">Concierge IA</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/checklist-anfitriao/">Checklist</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/termometro-mercado/">Termômetro</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/alerta-ofertas/">Ofertas</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/gerador-anuncio/">Anúncios</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/quiz-praia-ideal/">Quiz</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/precificador-temporada/">Precificador</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/tour-360/">Tour 360</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/fluxo-caixa/">Fluxo de Caixa</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/decor-praia/">Decor Praia</a>
+<a style="color:#e0f2fe;text-decoration:none;font-weight:600" href="https://praiadigital.github.io/open-house/">Open House</a>
+</nav>
+<div class="hero"><h1>📸 Tour 360 Pro</h1><p>Anúncios com tour virtual convertem até 2x mais. Monte seu plano de captação cômodo a cômodo.</p></div>
+<div class="container"><div class="grid">
+<div class="card"><h3>1️⃣ Seu imóvel</h3>
+<label>Tipo</label><select id="tipo"><option>Apartamento</option><option>Casa</option><option>Cobertura</option></select>
+<label>Quartos</label><input id="quartos" type="number" value="2" min="1" max="6">
+<label>Ferramenta</label><select id="ferr"><option value="cel">Celular + app 360 gratuito</option><option value="cam360">Câmera 360 dedicada</option><option value="pro">Fotógrafo profissional</option></select>
+<button onclick="gerar()">🎬 Gerar plano de tour</button></div>
+<div class="card"><h3>2️⃣ Seu plano de captação</h3><div id="saida"></div></div>
 </div>
-</main>
-<footer>Feito com 🌊 pela rede <a href="https://praia.digital">Praia Digital</a> · <a href="https://github.com/praiadigital/tour-360">código aberto no GitHub</a></footer>
+<div class="card"><h3>🚀 Depois do tour</h3><p>Publique com o texto do <a href="https://praiadigital.github.io/gerador-anuncio/">Gerador de Anúncios</a>, precifique no <a href="https://praiadigital.github.io/precificador-temporada/">Precificador</a> e organize a operação no <a href="https://praiadigital.github.io/checklist-anfitriao/">Checklist</a>.</p></div>
+</div>
 <script>
-const C=[['🛋️','Sala de estar','Vista parcial para o mar · piso porcelanato · varanda integrada'],['🍳','Cozinha','Planejados completos · fogão cooktop · bancada em quartzo'],['🛏️','Suíte','Cama queen · blackout · ar split 12.000 BTUs'],['🛁','Banheiro','Box blindex · aquecimento a gás · nicho em mármore'],['🏖️','Varanda','Vista frontal da Praia da Enseada · churrasqueira a carvão']];
-comodos.innerHTML=C.map((c,i)=>`<button class="${i===0?'ativo':''}" onclick="show(${i},this)">${c[0]} ${c[1]}</button>`).join('');
-function show(i,btn){[icone,nome,desc][0];icone.textContent=C[i][0];nome.textContent=C[i][1];desc.textContent=C[i][2];document.querySelectorAll('.comodos button').forEach(b=>b.classList.remove('ativo'));btn.classList.add('ativo')}
+function gerar(){
+const t=document.getElementById('tipo').value,q=+document.getElementById('quartos').value||2,f=document.getElementById('ferr').value;
+const comodos=["Sala de estar (ângulo da janela)","Cozinha americana","Suíte principal"];
+for(let i=2;i<=q;i++)comodos.push(`Quarto ${i}`);
+comodos.push("Banheiro","Varanda / vista","Área de lazer / fachada");
+const tempo={cel:"~2h + edição gratuita",cam360:"~1h, sem edição",pro:"~45min + entrega em 48h"}[f];
+document.getElementById('saida').innerHTML=`<p><strong>${t} · ${q} quarto(s)</strong> — tempo estimado: ${tempo}</p><ol>${comodos.map(c=>`<li>${c}</li>`).join('')}</ol><p style="color:#64748b">💡 Capte entre 10h e 14h com luz natural, cortinas abertas e câmera a 1,40m do chão.</p>`;}
+gerar();
 </script>
-</body></html>
+<footer>© Praia Digital — 2026 — Satélite da rede <a href="https://praia.digital">praia.digital</a> · <a href="https://praiadigital.github.io/apps/">Ver todos os apps</a></footer>
+</body>
+</html>
