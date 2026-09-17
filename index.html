@@ -1,30 +1,3 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tour 360 — Tours Virtuais Imobiliários</title>
-<meta name="description" content="Tours virtuais imersivos para anúncios imobiliários: demonstre um tour 360 interativo no navegador.">
-<style>body{font-family:system-ui;margin:0;background:#0c4a6e;color:#f0f9ff}header{background:linear-gradient(135deg,#0369a1,#0ea5e9);color:#fff;padding:2rem 1rem;text-align:center}header a{color:#bae6fd}main{max-width:860px;margin:1.5rem auto;padding:0 1rem}.card{background:rgba(255,255,255,.08);border-radius:12px;padding:1.2rem;margin:1rem 0}.viewer{position:relative;height:380px;border-radius:16px;overflow:hidden;cursor:grab;user-select:none}.scene{position:absolute;inset:-60px -200px;background-size:cover;transition:background .4s}.hotspot{position:absolute;background:#fff;color:#0369a1;border-radius:999px;padding:.4rem .8rem;font-weight:700;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.4)}.hs{background:#fff;color:#075985;border:0;border-radius:8px;padding:.5rem .9rem;margin:.25rem;cursor:pointer}.hs.on{background:#38bdf8}footer{text-align:center;font-size:.85rem;padding:2rem 1rem;color:#7dd3fc}.net{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin-top:.8rem}.net a{background:rgba(255,255,255,.15);color:#e0f2fe;padding:.3rem .6rem;border-radius:999px;text-decoration:none;font-size:.8rem}</style>
-</head>
-<body>
-<header><h1>🌐 Tour 360</h1><p>Tours virtuais que vendem imóveis 31% mais rápido. Arraste para explorar.</p><a href="https://praia.digital">← praia.digital</a> · <a href="https://praia.digital/apps">Hub de apps</a></header>
-<main>
-<div class="card">
-<div id="btns"></div>
-<div class="viewer" id="vw"><div class="scene" id="sc"></div><div class="hotspot" style="left:60%;top:55%" onclick="alert('Abrir detalhes do cômodo → integração com o portal Praia Digital')">ℹ️ Detalhes</div></div>
-</div>
-<div class="card"><h3>Por que tours 360?</h3><p>Anúncios com tour virtual recebem 2× mais contatos qualificados. Combine com o <a style="color:#7dd3fc" href="https://praia.digital/praiascore">PraiaScore</a> para destacar os pontos fortes do imóvel e com o <a style="color:#7dd3fc" href="https://praia.digital/concierge-ia">Concierge IA</a> para responder visitantes em tempo real.</p></div>
-</main>
-<footer><b>Rede Praia Digital</b><div class="net"><a href="https://praia.digital/apps">Hub</a><a href="https://praia.digital/match-praia">Match Praia</a><a href="https://praia.digital/radar-precos">Radar de Preços</a><a href="https://praia.digital/temporada-pro">Temporada Pro</a><a href="https://praia.digital/marea">Maréa</a><a href="https://praia.digital/plano-litoral">Plano Litoral</a><a href="https://praia.digital/vizinho-digital">Vizinho Digital</a></div><p>© 2026 Praia Digital</p></footer>
-<script>
-const S={'Sala com vista mar':'linear-gradient(100deg,#0ea5e9 20%,#fef3c7 40%,#0ea5e9 60%,#0369a1 90%)','Varanda gourmet':'linear-gradient(120deg,#0369a1 10%,#fbbf24 45%,#fb923c 65%,#0369a1 95%)','Suíte master':'linear-gradient(110deg,#164e63 15%,#67e8f9 45%,#164e63 80%)','Área da piscina':'linear-gradient(105deg,#0284c7 25%,#a5f3fc 50%,#22d3ee 70%,#0369a1 95%)'};
-let x=0,drag=false,sx=0;
-const bt=document.getElementById('btns');
-Object.keys(S).forEach((k,i)=>{const b=document.createElement('button');b.className='hs'+(i?'':' on');b.textContent=k;b.onclick=()=>{document.querySelectorAll('.hs').forEach(e=>e.classList.remove('on'));b.classList.add('on');sc.style.background=S[k];};bt.appendChild(b);});
-sc.style.background=S['Sala com vista mar'];
-vw.addEventListener('pointerdown',e=>{drag=true;sx=e.clientX;});
-window.addEventListener('pointerup',()=>drag=false);
-window.addEventListener('pointermove',e=>{if(drag){x+= (e.clientX-sx)*.4;sx=e.clientX;sc.style.transform='translateX('+((x%160))+'px) skewX('+Math.max(-4,Math.min(4,(x%40)/10))+'deg)';}});
-</script>
-</body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Tour 360 — tours virtuais para anúncios | Praia Digital</title><meta name="description" content="Tours virtuais 360° para imóveis do litoral: checklists, equipamentos e como anúncios com tour convertem mais."><link rel="canonical" href="https://praia.digital/tour-360/"><style>body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#f8fafc;color:#0f172a;line-height:1.6}.hero{background:linear-gradient(135deg,#0c4a6e,#0ea5e9);color:#fff;padding:60px 20px;text-align:center}.container{max-width:780px;margin:auto;padding:30px 20px}.card{background:#fff;border-radius:13px;padding:24px;margin-bottom:16px;box-shadow:0 3px 10px #0001}li{margin:6px 0}.stat{font-size:2rem;font-weight:800;color:#0ea5e9}a.app{color:#0c4a6e;font-weight:600}footer{text-align:center;padding:24px;color:#64748b}ul{padding-left:20px}</style></head><body><header class="hero"><h1>🎥 Tour 360</h1><p>Tours virtuais imersivos: o diferencial que faz seu anúncio do litoral converter mais.</p></header><main class="container"><div class="card" style="text-align:center"><div class="stat">+40%</div><p>mais reservas em anúncios com tour virtual vs. só fotos (média de mercado).</p></div><div class="card"><strong>Checklist do tour perfeito:</strong><ul><li>📱 Grave com celular + gimbal ou câmera 360 (Insta360, Ricoh Theta)</li><li>☀️ Sempre de dia, com luz natural e cortinas abertas</li><li>🚶 Um take contínuo: entrada → sala → cozinha → quartos → varanda com vista</li><li>🌊 Destaque o que vende no litoral: vista mar, churrasqueira, piscina, garagem</li><li>🎙️ Narre distâncias: “2 quadras da praia”, “5 min do centro”</li><li>📤 Publique no anúncio, WhatsApp e redes sociais</li></ul></div><div class="card"><strong>Potencialize o anúncio:</strong><br>✍️ <a class="app" href="https://praia.digital/gerador-descricoes/">Gerador de Descrições</a> — texto otimizado para o tour<br>💸 <a class="app" href="https://praia.digital/preco-justo/">Preço Justo</a> — precifique o diferencial<br>🔑 <a class="app" href="https://praia.digital/area-anfitriao/">Área do Anfitrião</a> — gestão completa</div></main><footer><a class="app" href="https://praia.digital/apps/">🌐 Apps Praia Digital</a> · <a class="app" href="https://praia.digital/">praia.digital</a></footer></body></html>
